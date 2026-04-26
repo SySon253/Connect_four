@@ -235,17 +235,17 @@ class MainMenu:
         if self.selected_mode == GAME_MODE_PVC:
             pygame.draw.rect(surface, COLOR_YELLOW, self.pvc_button.rect, 6, border_radius=20)
         
-        # Nút START - vàng, to
-        pygame.draw.rect(surface, COLOR_YELLOW, self.start_button.rect, border_radius=25)
+        # Nút START - vàng sáng, to
+        pygame.draw.rect(surface, COLOR_YELLOW_BRIGHT, self.start_button.rect, border_radius=25)
         pygame.draw.rect(surface, COLOR_BLACK, self.start_button.rect, 3, border_radius=25)
         
         # Shadow effect cho START
         shadow_rect = self.start_button.rect.copy()
         shadow_rect.y += 3
-        pygame.draw.rect(surface, (100, 100, 0), shadow_rect, border_radius=25)
+        pygame.draw.rect(surface, COLOR_BUTTON_HOVER, shadow_rect, border_radius=25)
         
         start_label = Label(self.start_button.rect.centerx, self.start_button.rect.centery,
-                           TEXTS[lang]['start'], self.font_medium, COLOR_BLACK, center=True)
+                    TEXTS[lang]['start'], self.font_medium, COLOR_BLACK, center=True)
         start_label.draw(surface)
         
         # Settings button - góc trên trái

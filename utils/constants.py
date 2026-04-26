@@ -34,7 +34,8 @@ COLOR_LIGHT_BLUE = (150, 180, 255)      # Xanh nhạt
 
 # Màu nút
 COLOR_YELLOW = (255, 200, 50)           # Vàng cho START
-COLOR_BUTTON_HOVER = (200, 160, 30)     # Vàng sẫm khi hover
+COLOR_YELLOW_BRIGHT = (255, 240, 150)   # Vàng sáng cho START
+COLOR_BUTTON_HOVER = (255, 220, 120)    # Vàng sẫm khi hover
 COLOR_EXIT = (220, 80, 80)              # Đỏ cho EXIT
 
 # Màu bàn cờ
